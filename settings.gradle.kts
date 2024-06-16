@@ -21,3 +21,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "AdMobComposables"
 include(":app")
+include(":AdMobComposables")
