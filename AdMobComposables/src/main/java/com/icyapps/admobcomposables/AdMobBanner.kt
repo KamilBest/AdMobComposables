@@ -10,7 +10,7 @@ import androidx.compose.ui.graphics.Color
 
 @Composable
 fun AdMobBanner() {
-    Column(modifier=Modifier.fillMaxSize().background(Color.Red)) {
+    Column(modifier = Modifier.fillMaxSize().background(Color.Red)) {
         Text("Banner Ad")
     }
 }
