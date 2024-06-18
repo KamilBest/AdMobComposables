@@ -4,6 +4,7 @@ plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.jetbrains.kotlin.android)
     alias(libs.plugins.compose.compiler)
+    `maven-publish`
 }
 
 android {
@@ -52,4 +53,17 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+}
+
+afterEvaluate {
+    publishing {
+        publications {
+            create<MavenPublication>("maven") {
+                from(components["release"])
+                groupId = "com.icyapps.admobcomposables"
+                artifactId = "admobcomposables"
+                version = "0.0.4"
+            }
+        }
+    }
 }
