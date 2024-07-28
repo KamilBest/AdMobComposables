@@ -14,6 +14,7 @@ appcompat = "1.7.0"
 material3 = "1.2.1"
 admob = "23.1.0"
 playServicesAdsLite = "23.1.0"
+userMessagingPlatform = "3.0.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -35,6 +36,7 @@ admob = { group = "com.google.android.gms", name = "play-services-ads", version.
 play-services-ads-lite = { group = "com.google.android.gms", name = "play-services-ads-lite", version.ref = "playServicesAdsLite" }
 navigation-compose = { module = "androidx.navigation:navigation-compose", version.ref = "composeNavigation" }
 kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "serialization" }
+user-messaging-platform = { module = "com.google.android.ump:user-messaging-platform", version.ref = "userMessagingPlatform" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

@@ -4,7 +4,6 @@ import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.padding
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -25,21 +24,19 @@ fun BannerAdsScreen() {
             adUnitId = Constants.TEST_BANNER_AD_UNIT_ID,
             backgroundColor = Color.LightGray,
             padding = PaddingValues(16.dp),
-            modifier = Modifier.padding(8.dp)
         )
         AdMobBanner(
             adSize = AdSize.MEDIUM_RECTANGLE,
             adUnitId = Constants.TEST_BANNER_AD_UNIT_ID,
             backgroundColor = Color.LightGray,
-            padding = PaddingValues(16.dp),
-            modifier = Modifier.padding(8.dp)
+            padding = PaddingValues(0.dp),
+
         )
         AdMobBanner(
             adSize = AdSize.FULL_BANNER,
             adUnitId = Constants.TEST_BANNER_AD_UNIT_ID,
             backgroundColor = Color.LightGray,
             padding = PaddingValues(16.dp),
-            modifier = Modifier.padding(8.dp)
         )
     }
 }
